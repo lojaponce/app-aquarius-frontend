@@ -1,0 +1,21 @@
+
+<div class="all">
+  <h2 class="title">Ingreso al Sistema</h2>
+  <form class="box" (ngSubmit)="onSubmit()">
+    <div class="part">
+      <div class="txt" for="username">Usuario</div>
+      <input class="input" [(ngModel)]="username" name="username" id="username" class="form-control" required>
+    </div>
+
+    <div class="part">
+      <div class="txt" for="password">Contraseña</div>
+      <input type="password" [(ngModel)]="password" name="password" id="password" class="form-control" required>
+    </div>
+
+    <div class="part" *ngIf="error">{{ error }}</div>
+    <div class="part">
+      <button type="submit" class="btn btn-primary mt-3">Ingresar</button>
+    </div>
+    
+  </form>
+</div>

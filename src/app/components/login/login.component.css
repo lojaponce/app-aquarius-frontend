@@ -1,0 +1,58 @@
+
+h2{
+    font-size: 45px;
+    margin: 0px 0 15px 0;
+}
+.all {
+  width: 100%;
+    height: 100vh;
+    background: var(--blanco);
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.all .title{
+    font-style: 25px !important;
+    color: var(--p);
+}
+.all .box{
+    width: 400px;
+    height: 150px;
+    font-style: 25px !important;
+    color: var(--p);
+    border: solid;
+    border-width: 3px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+.all .box .part{
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.all .box .part .txt{
+  width: 170px !important;
+  font-size: 25px;
+}
+input{
+  width: 220px;
+  height: 40px;
+  font-size: 25px;
+}
+button{
+  height: 50px;
+  margin-top: 50px;
+}
+.btn{
+  width: 100%;
+  height: 50px;
+  margin: 25px 50px 0 50px;
+  font-weight: 600;
+  font-size: 20px;
+}

@@ -1,0 +1,64 @@
+<div class="all">
+  <div class="top">
+    <h2 class="title">Lista de Empleados</h2>
+    <button class="btn btn-outline-danger" (click)="cerrarSesion()">Cerrar sesión</button>
+  </div>
+  <div class="new">
+    <button class="btn" (click)="nuevoEmpleado()">Nuevo Empleado</button>
+  </div>
+  <table class="table table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th>Empleado</th>
+        <th>Celular</th>
+        <th>Correo</th>
+        <th>Área</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let empleado of empleadosPaginados">
+        <td>{{ empleado.nombre }}</td>
+        <td>{{ empleado.celular }}</td>
+        <td>{{ empleado.correo }}</td>
+        <td>{{ empleado.area.nombre || 'Sin asignar' }}</td>
+        <td class="opt">
+          <button class="btn btn-warning btn-sm me-2" (click)="editarEmpleado(empleado.codigo)">Editar</button>
+          <button class="btn btn-danger btn-sm" (click)="eliminarEmpleado(empleado.codigo)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+    <nav aria-label="Paginación" class="pag">
+      <div class="flex">
+        <div class="left">
+          <!-- Botón Anterior con ícono -->
+          <div class="page-item" [class.disabled]="paginaActual === 1">
+            <a class="page-link" (click)="cambiarPagina(paginaActual - 1)">
+              <img src="assets/icons/double-left-arrow.svg" alt="Anterior" width="50" />
+            </a>
+          </div>
+        </div>
+        <div class="center">
+          <!-- Números de página -->
+          <div
+            class="page-item"
+            *ngFor="let pagina of totalPaginasArray"
+            [class.active]="paginaActual === pagina"
+          >
+            <a class="page-link" (click)="cambiarPagina(pagina)">{{ pagina }}</a>
+          </div>
+        </div>
+        <div class="right">
+          <!-- Botón Siguiente con ícono -->
+          <div class="page-item" [class.disabled]="paginaActual === totalPaginas">
+            <a class="page-link" (click)="cambiarPagina(paginaActual + 1)">
+              <img src="assets/icons/double-right-arrow.svg" alt="Siguiente" width="50" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+</div>

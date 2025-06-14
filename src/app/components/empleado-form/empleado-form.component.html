@@ -1,0 +1,45 @@
+<div class="all">
+  <div class="top">
+    <h2 class="title">Nuevo Empleado</h2>
+    <button class="btn btn-outline-danger" (click)="cerrarSesion()">Cerrar sesión</button>
+  </div>
+  
+
+  <form class="box" [formGroup]="empleadoForm" (ngSubmit)="guardarEmpleado()">
+    <div class="part">
+      <div for="nombre" class="txt">Nombres</div>
+      <input id="nombre" type="text" class="form-control" formControlName="nombre" />
+      <div *ngIf="empleadoForm.get('nombre')?.invalid && empleadoForm.get('nombre')?.touched" class="aviso">
+        El nombre es obligatorio.
+      </div>
+    </div>
+    <div class="part">
+      <div for="area" class="txt">Área</div>
+      <select id="area" class="form-select" formControlName="areaCodigo">
+        <option value="" disabled>Seleccione un Área</option> <!-- ✅ actualizado -->
+        <option *ngFor="let area of areas" [value]="area.codigo">{{ area.nombre }}</option>
+      </select>
+      <div *ngIf="empleadoForm.get('areaCodigo')?.invalid && empleadoForm.get('areaCodigo')?.touched" class="aviso">
+        Debes seleccionar un Área.
+      </div>
+    </div>
+    <div class="part">
+      <div for="correo" class="txt">Correo</div>
+      <input id="correo" type="email" class="form-control" formControlName="correo" />
+      <div *ngIf="empleadoForm.get('correo')?.invalid && empleadoForm.get('correo')?.touched" class="aviso">
+        Debes ingresar un correo válido.
+      </div>
+    </div>
+    <div class="part">
+      <div for="celular" class="txt">Celular</div>
+      <input id="celular" type="text" class="form-control" formControlName="celular" />
+    </div>
+
+<button type="submit" class="btn btn-success me-2" [disabled]="empleadoForm.invalid">
+  {{ modoEdicion ? 'Actualizar' : 'Crear' }}
+</button>
+    <button type="button" class="btn btn-secondary" (click)="cancelar()">Cancelar</button>
+
+    <div *ngIf="errorMessage" class="alert alert-danger mt-3">{{ errorMessage }}</div>
+  </form>
+</div>

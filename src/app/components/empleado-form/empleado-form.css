@@ -1,0 +1,96 @@
+h2{
+    font-size: 45px;
+    margin: 0px 0 15px 0;
+}
+.all {
+    width: 100%;
+    height: 100vh;
+    background: var(--blanco);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+}
+.all .top{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.all .top .btn{
+  width: auto;
+  height: 40px;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+.all .top .title{
+    font-style: 25px !important;
+    color: var(--p);
+    font-weight: 400;
+}
+.all .box{
+    width: 450px;
+    height: auto;
+    font-style: 25px !important;
+    color: var(--p);
+    border: solid;
+    border-width: 3px;
+    padding:20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+.all .box .btn {
+    width: 200px;
+    height: 40px;
+    margin: auto auto auto 190px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.all .box .part{
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  position: relative;
+}
+.all .box .part .txt{
+  width: 170px !important;
+  font-size: 25px;
+}
+.all .box .part .aviso {
+    width: 270px;
+    text-align: left;
+    transform: translateX(324px);
+    position: absolute;
+    right: 0;
+    background: white;
+    border: solid;
+    border-width: 2px;
+    border-color: #b3b3b3;
+    color: red;
+    border-radius: 0 10px 10px 0px;
+}
+select{
+    width: 277px;
+    height: 40px;
+    font-size: 20px;
+}
+input{
+  width: 270px;
+  height: 40px;
+  font-size: 20px;
+}
+button{
+  height: 50px;
+  margin-top: 50px;
+}
+.btn{
+  width: 100%;
+  height: 40px;
+  margin: 25px 50px 0 50px;
+  font-weight: 600;
+  font-size: 20px;
+}

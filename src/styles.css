@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Ultima';
+  src: url('/assets/tipografia/Ultima.ttf') format('truetype');
+}
+:root {
+  --p: #232123;
+  --blanco: #fff;
+  --negro: #000;
+}
+body {
+  font-family: 'Ultima', sans-serif !important;
+}
+@font-face {
+  font-family: 'Ultima';
+  src: url('/assets/tipografia/Ultima.ttf') format('truetype');
+}
