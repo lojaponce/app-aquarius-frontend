@@ -63,13 +63,13 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
 ## 📷 Project images
-### Run ngserve in vsc
+### Run ng serve in vsc
 ![image](https://github.com/user-attachments/assets/4e87178d-2f5c-482b-b9b6-65285fee3bfb)
 
-### POST Postman to http://localhost:8080/api/auth/login to get the token
-![image](https://github.com/user-attachments/assets/22667589-0e4b-42a5-be2b-3d3eb2a504b5)
+### The loguin inferface
+![image](https://github.com/user-attachments/assets/4b8625c0-fac7-428b-82cd-b801cce0daa1)
 
-### GET Postman to http://localhost:8080/api/areas with Authorization
+### The loguin inferface
 ![image](https://github.com/user-attachments/assets/88534de9-f5ca-4a3c-a792-f7cdd9b9a14f)
 
 
