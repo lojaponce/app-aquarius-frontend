@@ -1,14 +1,18 @@
-# AppAquarius - Frontend
+# 🌐 AppAquarius - Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.2.
+This is the **frontend application** for **AppAquarius**, developed using [Angular](https://angular.io/) and [Bootstrap](https://getbootstrap.com/). It provides a modern, responsive interface to interact with the backend API that manages employees and their assigned areas.
 
-## Development server
+## 🚀 Running the Application Locally
 
-To start a local development server, run:
+To run the frontend Angular application locally, use the following commands:
 
 ```bash
+# Install dependencies
+npm install
+
+# Start the development server
 ng serve
-```
+
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
