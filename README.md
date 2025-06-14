@@ -69,7 +69,16 @@ For more information on using the Angular CLI, including detailed command refere
 ### The loguin inferface
 ![image](https://github.com/user-attachments/assets/4b8625c0-fac7-428b-82cd-b801cce0daa1)
 
-### The loguin inferface
-![image](https://github.com/user-attachments/assets/88534de9-f5ca-4a3c-a792-f7cdd9b9a14f)
+### The employee list inferface
+![image](https://github.com/user-attachments/assets/a9d35be7-9a69-4cc0-a772-c85f3b1fc591)
+
+### The employee add inferface
+![image](https://github.com/user-attachments/assets/ba97987f-0957-4ed8-b7c8-2f13ee27daad)
+
+### The employee edit inferface
+![image](https://github.com/user-attachments/assets/579111ba-f1d1-42c0-880e-e3fd79602d83)
+
+
+
 
 
