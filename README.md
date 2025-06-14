@@ -1,4 +1,4 @@
-# 🌐 AppAquarius - Frontend
+# AppAquarius - Frontend
 
 This is the **frontend application** for **AppAquarius**, developed using [Angular](https://angular.io/) and [Bootstrap](https://getbootstrap.com/). It provides a modern, responsive interface to interact with the backend API that manages employees and their assigned areas.
 
